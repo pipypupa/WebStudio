@@ -1,0 +1,17 @@
+:root {
+    --accent-color: #2196F3;
+    --background-color: #FFFFFF ;
+    --text-color:#212121;
+    --overview-color: #757575;
+    --team-background-color:#FFF;
+    --footer-main-color:#2F303A;
+    --button-color:#2196F3;
+    }
+   
+    body {
+    background-color: var(--background-color);
+   }
+  
+   button {
+     color: var(--button-color);
+   }
