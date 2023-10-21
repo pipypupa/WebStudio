@@ -7,11 +7,3 @@
     --footer-main-color:#2F303A;
     --button-color:#2196F3;
     }
-   
-    body {
-    background-color: var(--background-color);
-   }
-  
-   button {
-     color: var(--button-color);
-   }
