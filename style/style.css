@@ -1,0 +1,22 @@
+:root {
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --text-color: #212121;
+  --overview-color: #757575;
+  --team-background-color: #fff;
+  --footer-main-color: #2f303a;
+  --button-color: #2196f3;
+  --word-wrap: break-word;
+}
+
+body {
+  font-family: Roboto;
+  word-wrap: break-word;
+}
+
+header {
+  font-size: 14px;
+  
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
