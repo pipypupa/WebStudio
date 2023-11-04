@@ -24,7 +24,7 @@ body{
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.03;
 }
 .li-studio{
   color: var(--accent-color);
@@ -36,7 +36,7 @@ body{
   color: var(--section-1-text-color);
   font-size: 44px;
   line-height: 60px;
-  letter-spacing: 2.64px;
+  letter-spacing: 0.06;
   font-weight: 900;
 }
 .button-studio{
@@ -44,7 +44,7 @@ body{
   color: var(--section-1-text-color);
   font-size: 16px;
   line-height: 30px;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.06;
 }
 .description-studio{
   color:var(--overview-color);
@@ -57,28 +57,28 @@ body{
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 1.08px
+  letter-spacing: 0.03;
 }
 .names-studio{
   font-size: 16px;
   color: var(--text-color);
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.03;
 }
 .type-of-work-studio{
   color: var(--overview-color);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.03;
 }
 .footer-studio{
   background-color: var(--footer-main-color);
   font-size: 14px;
 font-weight: 400;
 line-height: 24px;
-letter-spacing: 0.42px;
+letter-spacing: 0.031;
 }
 .place-studio{
   color: var(--section-1-text-color);
