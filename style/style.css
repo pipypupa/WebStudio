@@ -1,22 +1,88 @@
 :root {
-  --accent-color: #2196f3;
-  --background-color: #ffffff;
-  --text-color: #212121;
+  --accent-color: #2196F3;
+  --background-color: #FFFFFF ;
+  --text-color:#212121;
   --overview-color: #757575;
-  --team-background-color: #fff;
-  --footer-main-color: #2f303a;
-  --button-color: #2196f3;
-  --word-wrap: break-word;
+  --team-background-color:#FFF;
+  --footer-main-color:#2F303A;
+  --button-color:#2196F3;
+  --section-1-text-color:#FFF;
+  --background-footer-color:#2F303A;
+  }
+body{
+  background-color: var(--background-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif     ;
+  font-style: normal;
 }
-
-body {
-  font-family: Roboto;
-  word-wrap: break-word;
-}
-
-header {
+.header-studio{
+  color: var(--text-color);
   font-size: 14px;
-  
+  line-height: normal;
   font-weight: 500;
-  letter-spacing: 0.2em;
+}
+.web-studio{
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+.li-studio{
+  color: var(--accent-color);
+}
+.section-1{
+  background-color: var(--footer-main-color);
+}
+.title-studio{
+  color: var(--section-1-text-color);
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 2.64px;
+  font-weight: 900;
+}
+.button-studio{
+  background-color: var(--button-color);
+  color: var(--section-1-text-color);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+}
+.description-studio{
+  color:var(--overview-color);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.section-3-4-studio{
+  color: var(--text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px
+}
+.names-studio{
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.type-of-work-studio{
+  color: var(--overview-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.footer-studio{
+  background-color: var(--footer-main-color);
+  font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+}
+.place-studio{
+  color: var(--section-1-text-color);
+}
+.gmail-gmail-phone-studio{
+  color:var(--background-footer-color);
 }
