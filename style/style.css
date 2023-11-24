@@ -8,127 +8,113 @@
   --button-color: #2196f3;
   --section-1-text-color: #fff;
   --background-footer-color: #2f303a;
+  --gmail-phone-color: rgba(255, 255, 255, 0.6);
+  --span-color: #000;
 }
 body {
   background-color: var(--background-color);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
 }
-.header-studio {
+
+.header-logo {
+  font-family: "Raleway";
+  color: var(--accent-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+}
+.header-span {
+  color: var(--span-color);
+}
+
+.header-page {
   color: var(--text-color);
   font-size: 14px;
-  line-height: normal;
   font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02em;
 }
-.web-studio {
-  display: inline-block;
-  color: transparent;
-  background-image: linear-gradient(90deg, blue 38%, black 40%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 24px;
-  font-weight: bold;
+.header-link {
+  color: var(--overview-color);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02em;
 }
-.li-studio {
+.header-page:hover {
   color: var(--accent-color);
 }
-.li-portfolio {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
+.header-link:hover {
+  color: var(--accent-color);
 }
-.li-contacts {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
-.li-phone {
-  color: var(--overview-color);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
-.section-1 {
+.hero-section {
   background-color: var(--footer-main-color);
 }
-.title-studio {
+.hero-title {
   color: var(--section-1-text-color);
   font-size: 44px;
   line-height: 60px;
-  letter-spacing: 0.06;
+  letter-spacing: 2.64px;
   font-weight: 900;
 }
-.button-studio {
+.hero-button {
   background-color: var(--button-color);
   color: var(--section-1-text-color);
   font-size: 16px;
   line-height: 30px;
-  letter-spacing: 0.06;
+  letter-spacing: 0.96px;
 }
-.description-studio {
+.info-title {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.info-desc {
   color: var(--overview-color);
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-.section-3-4-studio {
+.work-title {
   color: var(--text-color);
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.03;
+  letter-spacing: 1.08px;
 }
-.names-studio {
+.names-text {
   font-size: 16px;
   color: var(--text-color);
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.03;
+  letter-spacing: 0.48px;
 }
-.type-of-work-studio {
+.names-roles {
   color: var(--overview-color);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.03;
+  letter-spacing: 0.48px;
 }
 .footer-studio {
   background-color: var(--footer-main-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.031;
+  letter-spacing: 0.42px;
 }
-.split-text {
-  display: inline-block;
-  color: transparent;
-  background-image: linear-gradient(90deg, blue 38%, white 40%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 24px;
-  font-weight: bold;
-}
-.place-studio {
+.footer-span {
   color: var(--background-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
-.gmail-studio {
-  color: var(--overview-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+.footer-place {
+  color: var(--section-1-text-color);
 }
-.phone-studio {
-  color: var(--overview-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+.footer-gmail-phone {
+  color: var(--gmail-phone-color);
 }

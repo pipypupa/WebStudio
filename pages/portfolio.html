@@ -1,110 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>figma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../style/reset.css" />
-    <link rel="stylesheet" href="../style/portfolio.css" />
-    <title>portfolio</title>
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css">
+  <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/portfolio.css"/>
   </head>
   <body>
-    <header class="header-portfolio">
-      <nav>
-        <a class="web-studio" href="../index.html">WebStudio</a>
-        <ul>
-          <li><a href="../index.html" class="list-studio">Студія</a></li>
-          <li>
-            <a href="./portfolio.html" class="list-portfolio">Портфоліо</a>
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo" href="../index.html">Web<span class="header-span">Studio</span></a>
+        <ul class="header-list">
+          <li class="header-item" ><a href="../index.html" class="header-page">Студія</a></li>
+          <li class="header-item" ><a href="../pages/portfolio.html" class="header-page">Портфоліо</a></li>
+          <li class="header-item"><a href="../pages/contacts.html" class="header-page">Контакти</a></li>
+        </ul>
+        <ul class="header-contacts">
+          <li class="header-contact" >
+            <a   href="mailto:inf@devstudio.com" class="header-link">info@devstuidio.com</a>
           </li>
-          <li><a href="./contacts.html" class="list-contact">Контакти</a></li>
-          <li>
-            <a href="mailto:inf@devstudio.com" class="list-mail"
-              >info@devstuidio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:380961111111" class="list-phone">+38 096 111 11 11</a>
-          </li>
+          <li class="header-contact"><a href="tel:380961111111" class="header-link">+38 096 111 11 11</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="section-1">
+      <section class="buttons-section">
         <ul>
           <li>
-            <button type="button" class="button-portfolio">Усі</button>
+            <button type="button" class="buttons-name">Усі</button>
           </li>
           <li>
-            <button type="button" class="button-portfolio">Веб-сайти</button>
+            <button type="button" class="buttons-name">Веб-сайти</button>
           </li>
           <li>
-            <button type="button" class="button-portfolio">Додатки</button>
+            <button type="button" class="buttons-name">Додатки</button>
           </li>
           <li>
-            <button type="button" class="button-portfolio">Дизайн</button>
+            <button type="button" class="buttons-name">Дизайн</button>
           </li>
           <li>
-            <button type="button" class="button-portfolio">Маркетинг</button>
+            <button type="button" class="buttons-text">Маркетинг</button>
           </li>
         </ul>
       </section>
-      <section class="section-2">
+      <section class="info-section">
         <ul>
           <li>
-            <img class="img-portfolio" src="../img/img8.jpg" alt="error" />
-            <p class="img-name-portfolio">Технокряк</p>
-            <p class="description-img-portfolio">Веб-сайт</p>
+            <img class="info-img" src="../img/img8.jpg" alt="error" />
+            <p class="info-name">Технокряк</p>
+            <p class="info-description">Веб-сайт</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img9.jpg" alt="error" />
-            <p class="img-name-portfolio">Постер New Orlean vs Golden Star</p>
-            <p class="description-img-portfolio">Дизайн</p>
+            <img class="info-img" src="../img/img9.jpg" alt="error" />
+            <p class="info-name">Постер New Orlean vs Golden Star</p>
+            <p class="info-description">Дизайн</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img10.jpg" alt="error" />
-            <p class="img-name-portfolio">Ресторан Seafood</p>
-            <p class="description-img-portfolio">Додаток</p>
+            <img class="info-img" src="../img/img10.jpg" alt="error" />
+            <p class="info-name">Ресторан Seafood</p>
+            <p class="info-description">Додаток</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img11.jpg" alt="error" />
-            <p class="img-name-portfolio">Проєкт Prime</p>
-            <p class="description-img-portfolio">Маркетинг</p>
+            <img class="info-img" src="../img/img11.jpg" alt="error" />
+            <p class="info-name">Проєкт Prime</p>
+            <p class="info-description">Маркетинг</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img12.jpg" alt="error" />
-            <p class="img-name-portfolio">Проєкт Boxes</p>
-            <p class="description-img-portfolio">Додаток</p>
+            <img class="info-img" src="../img/img12.jpg" alt="error" />
+            <p class="info-name">Проєкт Boxes</p>
+            <p class="info-description">Додаток</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img13.jpg" alt="error" />
-            <p class="img-name-portfolio">Inspiration has no Borders</p>
-            <p class="description-img-portfolio">Веб-сайт</p>
+            <img class="info-img" src="../img/img13.jpg" alt="error" />
+            <p class="info-name">Inspiration has no Borders</p>
+            <p class="info-description">Веб-сайт</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img14.jpg" alt="error" />
-            <p class="img-name-portfolio">Видання Limited Edition</p>
-            <p class="description-img-portfolio">Дизайн</p>
+            <img class="info-img" src="../img/img14.jpg" alt="error" />
+            <p class="info-name">Видання Limited Edition</p>
+            <p class="info-description">Дизайн</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img15.jpg" alt="error" />
-            <p class="img-name-portfolio">Проєкт LAB</p>
-            <p class="description-img-portfolio">Маркетинг</p>
+            <img class="info-img" src="../img/img15.jpg" alt="error" />
+            <p class="info-name">Проєкт LAB</p>
+            <p class="info-description">Маркетинг</p>
           </li>
           <li>
-            <img class="img-portfolio" src="../img/img16.jpg" alt="error" />
-            <p class="img-name-portfolio">Growing Business</p>
-            <p class="description-img-portfolio">Додаток</p>
+            <img class="info-img" src="../img/img16.jpg" alt="error" />
+            <p class="info-name">Growing Business</p>
+            <p class="info-description">Додаток</p>
           </li>
         </ul>
       </section>
@@ -112,9 +104,9 @@
   </body>
   <footer class="footer-portfolio">
     <hr />
-    <p class="split-text">WebStudio</p>
+    <p class="header-logo">Web<span class="footer-span">Studio</span</p>
     <p class="place-portfolio">м.Київ,пр-т Лесі Українки,26</p>
-    <p class="gmail-portfolio">info@devstuidio</p>
-    <p class="phone-portfolio">+38 096 111 11 11</p>
+    <p class="gmail-phone-portfolio">info@devstuidio</p>
+    <p class="gmail-phone-portfolio">+38 096 111 11 11</p>
   </footer>
 </html>

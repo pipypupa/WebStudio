@@ -3,118 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>figma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style/reset.css" />
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css">
+  <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css" />
-    <title>WebStudio</title>
   </head>
   <body>
-    <header class="header-studio">
-      <nav>
-        <a class="web-studio" href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="./index.html" class="li-studio">Студія</a></li>
-          <li>
-            <a href="./pages/portfolio.html" class="li-portfolio">Портфоліо</a>
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo" href="./index.html">Web<span class="header-span">Studio</span></a>
+        <ul class="header-list">
+          <li class="header-item" ><a href="./index.html" class="header-page">Студія</a></li>
+          <li class="header-item" ><a href="./pages/portfolio.html" class="header-page">Портфоліо</a></li>
+          <li class="header-item"><a href="./contacts.html" class="header-page">Контакти</a></li>
+        </ul>
+        <ul class="header-contacts">
+          <li class="header-contact" >
+            <a   href="mailto:inf@devstudio.com" class="header-link">info@devstuidio.com</a>
           </li>
-          <li>
-            <a href="./pages/contacts.html" class="li-contacts">Контакти</a>
-          </li>
-          <li>
-            <a href="mailto:inf@devstudio.com" class="li-studio"
-              >info@devstuidio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:380961111111" class="li-phone">+38 096 111 11 11</a>
-          </li>
+          <li class="header-contact"><a href="tel:380961111111" class="header-link">+38 096 111 11 11</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="section-1">
-        <h1 class="title-studio">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="button-studio">Замовити послугу</button>
+      <section class="hero-section">
+        <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button class="hero-button">замовити послугу</button>
       </section>
-      <section>
-        <ul>
-          <li>
-            <h6>УВАГА ДО ДЕТАЛЕЙ</h6>
-            <p class="description-studio">
+      <section class="info-section">
+        <ul class="info-list">
+          <li class="info-item">
+            <h2 class="info-title">УВАГА ДО ДЕТАЛЕЙ</h6>
+            <p class="info-desc">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
-            <h6>ПУНКТУАЛНІСТЬ</h6>
-            <p class="description-studio">
+            <h2 class="info-title">ПУНКТУАЛНІСТЬ</h6>
+            <p class="info-desc">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li>
-            <h6>ПЛАНУВАННЯ</h6>
-            <p class="description-studio">
+            <h2 class="info-title">ПЛАНУВАННЯ</h6>
+            <p class="info-desc">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
-            <h6>СУЧАСНІ ТЕХНОЛОГІЇ</h6>
-            <p class="description-studio">
+            <h2 class="info-title">СУЧАСНІ ТЕХНОЛОГІЇ</h6>
+            <p class="info-desc">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="section-3-4-studio">Чим ми займаємося</h3>
-        <ul>
+      <section class="work-section">
+        <h2 class="work-title">Чим ми займаємося</h3>
+        <ul class="work-list">
           <li>
-            <img src="./img/img1.jpg" alt="error" width="370" height="294" />
+            <img class="work-img" src="../img/img1.jpg" alt="error" width="370" height="294" />
           </li>
           <li>
-            <img src="./img/img2.jpg" alt="error" width="370" height="294" />
+            <img class="work-img" src="../img/img2.jpg" alt="error" width="370" height="294" />
           </li>
           <li>
-            <img src="./img/img3.jpg" alt="error" width="370" height="294" />
+            <img class="work-img" src="../img/img3.jpg" alt="error" width="370" height="294" />
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="section-3-4-studio">Наша команда</h3>
-        <ul>
+      <section class="names-section">
+        <h3 class="work-title">Наша команда</h3>
+        <ul class="names-list">
           <li>
-            <img src="./img/img4.jpg" alt="error" width="270" height="260" />
-            <h6 class="names-studio">Ігор Дем'яненко</h6>
-            <p class="type-of-work-studio">Product Designer</p>
+            <img class="names-img" src="../img/img4.jpg" alt="error" width="270" height="260" />
+            <h6 class="names-text">Ігор Дем'яненко</h6>
+            <p class="names-roles">Product Designer</p>
           </li>
           <li>
-            <img src="./img/img5.jpg" alt="error" width="270" height="260" />
-            <h6 class="names-studio">Ольга Рєпіна</h6>
-            <p class="type-of-work-studio">Frontend Developer</p>
+            <img class="names-img" src="../img/img5.jpg" alt="error" width="270" height="260" />
+            <h6 class="names-text">Ольга Рєпіна</h6>
+            <p class="names-roles">Frontend Developer</p>
           </li>
           <li>
-            <img src="./img/img6.jpg" alt="error" width="270" height="260" />
-            <h6 class="names-studio">Микола Тарасов</h6>
-            <p class="type-of-work-studio">Marketing</p>
+            <img class="names-img" src="../img/img6.jpg" alt="error" width="270" height="260" />
+            <h6 class="names-text">Микола Тарасов</h6>
+            <p class="names-roles">Marketing</p>
           </li>
           <li>
-            <img src="./img/img7.jpg" alt="error" width="270" height="260" />
-            <h6 class="names-studio">Михайло Єрмаков</h6>
-            <p class="type-of-work-studio">UI Designer</p>
+            <img class="names-img" src="../img/img7.jpg" alt="error" width="270" height="260" />
+            <h6 class="names-text">Михайло Єрмаков</h6>
+            <p class="names-roles">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -122,9 +110,9 @@
   </body>
   <footer class="footer-studio">
     <hr />
-    <h5 class="split-text">WebStudio</h5>
-    <p class="place-studio">м.Київ,пр-т Лесі Українки,26</p>
-    <p class="gmail-studio">info@devstuidio</p>
-    <p class="phone-studio">+38 096 111 11 11</p>
+    <h5 class="header-logo">Web<span class="footer-span">studio</span></h5>
+    <p class="footer-place">м.Київ,пр-т Лесі Українки,26</p>
+    <p class="footer-gmail-phone">info@devstuidio</p>
+    <p class="footer-gmail-phone">+38 096 111 11 11</p>
   </footer>
 </html>
