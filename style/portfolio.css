@@ -1,94 +1,153 @@
-:root {
-  --accent-color: #2196f3;
-  --background-color: #ffff;
-  --phone-description-color: #757575;
-  --text-clolor: #212121;
-  --footer-main-backround-color: #2f303a;
-  --background-footer: #2f303a;
-  --gmail-phone-color: rgba(255, 255, 255, 0.6);
-  --background-button: #f5f4fa;
-  --span-color: #000;
-}
-body {
-  background-color: var(--background-color);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-}
-.header-logo {
-  font-family: "Raleway";
-  color: var(--accent-color);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.03em;
-}
-.header-span {
-  color: var(--span-color);
+.container {
+  width: 900px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header-page {
+.header-word {
+  color: var(--link-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-title {
+  color: var(--word-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.header-link {
+  text-decoration: none;
+  color: var(--word-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header-link-mail {
+  text-decoration: none;
   color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
 }
-.header-link {
-  color: var(--overview-color);
 
+.header-link-tel {
+  text-decoration: none;
+  color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
 }
-.header-page:hover {
-  color: var(--accent-color);
-}
-.header-link:hover {
-  color: var(--accent-color);
-}
-.buttons-name {
-  width: 125px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.buttons-name:hover {
-  color: var(--text-clolor);
-  background-color: var(--accent-color);
 
+main {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+
+.hero-button {
+  color: var(--word-color);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
+  border: none;
 }
-.info-name {
-  color: var(--text-clolor);
+
+.hero-button:hover {
+  background-color: var(--link-color);
+  border: none;
+  color: var(--primary-color);
+}
+
+.hero-item {
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.hero-title {
+  color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
 }
-.info-description {
-  color: var(--phone-description-color);
+
+.hero-text {
+  color: var(--text-color);
   font-size: 16px;
+
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.03em;
 }
-.footer-portfolio {
-  background-color: var(--background-footer);
+
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-word {
+  color: var(--link-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.footer-2word {
+  color: var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.footer-title {
+  color: var(--word-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  color: var(--primary-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03;
 }
-.footer-span {
-  color: var(--background-color);
+
+.footer-mail {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
-.place-portfolio {
-  color: var(--background-color);
-}
-.gmail-phone-portfolio {
-  color: var(--gmail-phone-color);
+
+.footer-phone {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03;
 }
