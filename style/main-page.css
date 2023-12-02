@@ -59,7 +59,7 @@ header {
   letter-spacing: 0.02;
 }
 
-.header-link-tel {
+.header-link-phone {
   text-decoration: none;
   color: var(--text-color);
   font-size: 14px;
@@ -127,7 +127,7 @@ header {
   padding-left: 110px;
 }
 
-.info {
+.information {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -148,22 +148,22 @@ header {
   letter-spacing: 0.03em;
 }
 
-.spacialisation-container {
+.spacialization-container {
   display: flex;
   gap: 100px;
 }
 
-.specialisation-list {
+.specialization-list {
   display: flex;
   gap: 50px;
   padding-left: 110px;
 }
 
-.specialisation {
+.specialization {
   padding-bottom: 94px;
 }
 
-.specialisation-title {
+.specialization-title {
   color: var(--title-color);
   text-align: center;
   font-size: 36px;
