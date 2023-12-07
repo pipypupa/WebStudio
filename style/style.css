@@ -4,6 +4,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: solid red;
 }
 
 header {
@@ -13,13 +14,12 @@ header {
 
 .header-container {
   display: flex;
-  gap: 100px;
 }
 
 .header-list {
   display: flex;
   gap: 50px;
-  padding-left: 110px;
+  align-items: center;
 }
 .header-word {
   color: var(--link-color);
@@ -35,6 +35,13 @@ header {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
 .header-link {
@@ -79,13 +86,13 @@ header {
   color: var(--link-color);
 }
 
-.hero {
+.section-1 {
   background-color: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-title {
+.title-studio {
   color: var(--primary-color);
   text-align: center;
   font-size: 44px;
@@ -93,6 +100,9 @@ header {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -101,7 +111,20 @@ header {
   border: none;
   padding: 10px 20px;
   font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+  flex-shrink: 0;
   text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  margin-top: 30px;
 }
 
 .button:hover {
@@ -124,7 +147,6 @@ header {
 .info-list {
   display: flex;
   gap: 50px;
-  padding-left: 110px;
 }
 
 .information {
@@ -138,6 +160,8 @@ header {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  gap: 50px;
+  margin-bottom: 10px;
 }
 
 .info-text {
@@ -155,8 +179,7 @@ header {
 
 .specialization-list {
   display: flex;
-  gap: 50px;
-  padding-left: 110px;
+  gap: 30px;
 }
 
 .specialization {
@@ -169,20 +192,19 @@ header {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-container {
-  display: flex;
   gap: 100px;
 }
 
 .team-list {
   display: flex;
   gap: 30px;
-  padding-left: 100px;
 }
 
-.team-image {
+.team-img {
   width: 270px;
   height: 260px;
 }
@@ -197,6 +219,9 @@ header {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -204,6 +229,9 @@ header {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.03;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-description {
@@ -211,6 +239,8 @@ header {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.03;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .footer {
@@ -218,20 +248,25 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-word {
+.footer-web {
   color: var(--link-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 15px;
 }
 
-.footer-2word {
+.footer-studio {
   color: var(--primary-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+.footer-item {
+  margin-bottom: 15px;
 }
 
 .footer-title {
@@ -240,6 +275,7 @@ header {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .footer-address {
