@@ -94,11 +94,13 @@
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
+  border: none;
 }
 
-.main-button:hover {
+.portfolio-button:hover {
   background-color: var(--link-color);
   color: var(--primary-color);
+  border: none;
 }
 .main-photo {
   display: flex;
