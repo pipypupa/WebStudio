@@ -180,9 +180,6 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-.footer-item {
-  margin-bottom: 9px;
-}
 
 .footer-title {
   color: var(--word-color);
@@ -199,6 +196,9 @@
   line-height: 24px;
   letter-spacing: 0.03;
 }
+.footer-item {
+  margin-top: 9px;
+}
 
 .footer-mail {
   text-decoration: none;
@@ -206,7 +206,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
 }
 
 .footer-phone {
