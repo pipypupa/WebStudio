@@ -19,7 +19,7 @@
 .header-list {
   display: flex;
   gap: 50px;
-  text-align: center;
+  align-items: center;
 }
 .header-word {
   color: var(--link-color);
