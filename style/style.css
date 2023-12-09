@@ -19,7 +19,7 @@
 .header-list {
   display: flex;
   gap: 50px;
- text-align: center;
+  text-align: center;
 }
 .header-word {
   color: var(--link-color);
@@ -270,7 +270,9 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03;
-  margin-bottom: 9px;
+}
+.footer-item {
+  margin-top: 9px;
 }
 
 .footer-mail {
@@ -280,7 +282,6 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  
 }
 
 .footer-phone {
