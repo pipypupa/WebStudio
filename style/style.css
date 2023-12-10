@@ -98,8 +98,7 @@
 }
 
 .button {
-  background-color: var(--link-color);
-  color: var(--primary-color);
+  color: var(--title-color);
   border: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -120,6 +119,7 @@
 }
 
 .button:hover {
+  color: var(--primary-color);
   background-color: #0066cc;
 }
 
@@ -184,7 +184,7 @@
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+ padding-bottom: 30px;
 }
 
 .team-container {
@@ -199,6 +199,7 @@
 .team-img {
   width: 270px;
   height: 260px;
+  padding-bottom: 30px;
 }
 
 .team {
@@ -212,7 +213,6 @@
   font-weight: 700;
   letter-spacing: 0.03;
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -221,7 +221,6 @@
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.03;
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -231,8 +230,8 @@
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.03;
-  margin-bottom: 20px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .footer {
