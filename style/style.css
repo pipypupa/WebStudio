@@ -1,5 +1,5 @@
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -7,6 +7,10 @@
   outline: solid red;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -116,6 +120,7 @@
   line-height: 30px;
   letter-spacing: 0.06em;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -173,6 +178,9 @@
   display: flex;
   gap: 30px;
 }
+.specialization-item {
+  margin-right: auto;
+}
 
 .specialization {
   padding-bottom: 94px;
@@ -197,15 +205,15 @@
 }
 
 .team-img {
-  width: 270px;
-  height: 260px;
   margin-bottom: 30px;
+  margin-right: auto;
 }
 
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 
 .team-title {
   color: var(--title-color);
