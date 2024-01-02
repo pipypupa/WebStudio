@@ -151,9 +151,8 @@
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
-  flex-basis: calc((100% - (2 * 30px)) / 3);
+  flex-basis: calc((100% / 3) - 30px);
   margin-right: auto;
-  
 }
 .main-img {
   margin-bottom: 20px;
