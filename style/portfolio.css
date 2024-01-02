@@ -151,7 +151,7 @@
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
-  flex-basis: calc((100%- (2 * 30px)) / 3);
+  flex-basis: calc((100% - (2 * 30px)) / 3);
   margin-right: auto;
   
 }
