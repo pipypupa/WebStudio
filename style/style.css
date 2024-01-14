@@ -144,6 +144,29 @@ img {
   display: flex;
   gap: 50px;
 }
+.info-item:nth-child(1)::before{
+  background-image: url(../img/antenna1.png);
+}
+.info-item:nth-child(2)::before{
+  background-image: url(../img/clock1.png)
+}
+.info-item:nth-child(3)::before{
+  background-image: url(../img/diagram1.png)
+}
+.info-item:nth-child(4)::before{
+  background-image: url(../img/astronaut1.png)
+}
+
+.info-item::before{
+  content: "";
+  height: 120px;
+  width: 270px;
+  display: block;
+  background-color: var(--background-color-images);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
 
 .information {
   padding-top: 94px;
