@@ -81,12 +81,11 @@ img {
   color: var(--link-color);
 }
 
-.section-1 {
-  background-color: var(--background-color);
+.main {
+  background-image: url(../img/overlay.png);
   padding-top: 200px;
   padding-bottom: 200px;
   border-radius: 4px;
-  
 }
 
 .title-studio {
