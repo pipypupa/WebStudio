@@ -9,6 +9,10 @@
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
 }
 
 .header-container {
@@ -23,8 +27,10 @@
 .header-word {
   color: var(--link-color);
   font-size: 26px;
+  font-family: Raleway;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.78px;
+  word-wrap: break-word;
 }
 
 .header-title {
@@ -152,6 +158,8 @@
   letter-spacing: 0.03em;
   flex-basis: calc((100% / 3) - 30px);
   margin-right: auto;
+}
+.main-item:hover {
   width: 100%;
   height: 100%;
   background: white;
