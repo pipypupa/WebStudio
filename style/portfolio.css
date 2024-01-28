@@ -85,6 +85,9 @@
 .header-link-mail:hover {
   color: var(--link-color);
 }
+.header-link-phone:hover {
+  color: var(--link-color);
+}
 
 .main {
   padding-top: 94px;
