@@ -69,6 +69,12 @@ img {
   letter-spacing: 0.28px;
   word-wrap: break-word;
 }
+.icon-envelope-hover {
+  width: 16px;
+  height: 12px;
+ margin-right: 10px;
+ fill: var(--text-color);
+}
 
 .header-link-phone {
   text-decoration: none;
