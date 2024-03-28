@@ -68,6 +68,25 @@
   letter-spacing: 0.28px;
   word-wrap: break-word;
 }
+.header-link-mail:hover .icon-envelope-hover {
+  fill: var(--link-color);
+}
+.icon-envelope-hover {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
+  margin-right: 10px;
+}
+.header-link-phone:hover .icon-smartphone {
+  fill: var(--link-color);
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: var(--text-color);
+  margin-right: 10px;
+}
 
 .header-link-phone {
   text-decoration: none;
