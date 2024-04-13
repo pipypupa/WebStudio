@@ -412,6 +412,7 @@
               <h1 class="email-form-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h1>
               <div class="email-form-container">
                 <input
+                  required
                   type="text"
                   name=""
                   class="email-form-input"
@@ -441,28 +442,44 @@
           <ul class="modal-list">
             <li class="modal-item">
               <label class="modal-labal" for="">Ім'я</label>
-              <input placeholder="" class="modal-input" type="tel" />
+              <div>
+                <svg class="modal-icon">
+                  <use href="./img/symbol-defs.svg#icon-human"></use>
+                </svg>
+                <input required placeholder="" class="modal-input" type="tel" />
+              </div>
             </li>
 
             <li class="modal-item">
               <label class="modal-labal" for="">Телефон</label>
-              <input class="modal-input" type="tel" />
+              <div>
+                <svg class="modal-icon">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <input required class="modal-input" type="tel" />
+              </div>
             </li>
             <li class="modal-item">
               <label class="modal-labal" for="">Пошта</label>
-              <input class="modal-input" type="email" />
+              <div>
+                <svg class="modal-icon">
+                  <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg>
+                <input required class="modal-input" type="email" />
+              </div>
             </li>
             <li class="modal-item">
               <label class="modal-labal" for="">Коментар</label>
               <input
+                required
                 placeholder="Введіть текст"
                 class="modal-input1"
                 type="tel"
               />
             </li>
             <li class="modal-item">
-              <input class="" type="checkbox" />
-              <label for=""
+              <input id="checkbox" class="" type="checkbox" />
+              <label for="checkbox"
                 >Погоджуюся з розсилкою та приймаю
                 <a href="">Умови договору</a></label
               >
