@@ -89,6 +89,7 @@
   margin-top: 30px;
   color: var(--primary-color);
   background-color: var(--link-color);
+  cursor: pointer;
 }
 
 .modal-close-icon {

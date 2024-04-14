@@ -112,6 +112,13 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.main-overlay {
+  position: absolute;
+  opacity: 0;
+  left: 24px;
+  top: 63px;
+}
+
 
 .main-list {
   display: flex;
