@@ -112,13 +112,31 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.main-overlay {
-  position: absolute;
-  opacity: 0;
-  left: 24px;
-  top: 63px;
-}
 
+.overlay-text {
+  position: absolute;
+  top: 63px;
+  left: 23px;
+  opacity: 0;
+}
+.main-item:focus .main-overlay,
+.main-item:hover .main-overlay {
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+}
+.main-item:focus .overlay-text,
+.main-item:hover .overlay-text {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  position: absolute;
+  opacity: 1;
+}
 
 .main-list {
   display: flex;
@@ -187,6 +205,7 @@
 }
 
 .main-item {
+  position: relative;
   color: var(--title-color);
   font-size: 16px;
   font-weight: 500;
