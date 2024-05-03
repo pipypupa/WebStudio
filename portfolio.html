@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./style/normalize.css" />
     <link rel="stylesheet" href="./style/root.css" />
     <link rel="stylesheet" href="./style/portfolio.css" />
-    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
   </head>
   <body>
     <header class="header">
@@ -59,7 +60,7 @@
       <div class="container main-container">
         <ul class="main-list">
           <li class="main-item-button">
-            <button class="portfolio-button-all" type="button">Усі</button>
+            <button class="portfolio-button" type="button">Усі</button>
           </li>
           <li class="main-item-button">
             <button class="portfolio-button" type="button">Веб-сайти</button>
@@ -274,6 +275,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <form action="" class="email-form">
+            <h1 class="email-form-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h1>
+            <div class="email-form-container">
+              <input
+                required
+                type="text"
+                name=""
+                class="email-form-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="email-form-button">
+                Підписатися
+                <svg class="email-form-icon">
+                  <use href="./img/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

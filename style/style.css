@@ -234,6 +234,10 @@
   padding: 12px 12px 12px 12px;
   cursor: pointer;
   display: block;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  border-radius: 50%;
 }
 
 .icon-instagram,
@@ -243,6 +247,9 @@
   width: 20px;
   height: 20px;
   fill: var(--text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 .teamsocial-item a:hover,
@@ -261,6 +268,7 @@
 .teamsocial-item a:focus .icon-linkedin {
   fill: var(--primary-color);
 }
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -297,6 +305,9 @@
   width: 106px;
   height: 60px;
   fill: var(--text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 .clients-item a:hover .icon-Ya-Co,
@@ -317,180 +328,4 @@
 .clients-item a:hover,
 .clients-item a:focus {
   border: 1px solid var(--link-color);
-}
-
-.footer {
-  background-color: var(--background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer-web {
-  color: var(--link-color);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-bottom: 15px;
-}
-
-.footer-studio {
-  color: var(--primary-color);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-bottom: 15px;
-}
-
-.footer-title {
-  color: var(--word-color);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-}
-
-.footer-address {
-  color: var(--primary-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03;
-}
-.footer-item {
-  margin-top: 9px;
-}
-
-.footer-mail {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.footer-phone {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03;
-}
-.footer-links {
-  padding-top: 12px;
-  margin-left: 70px;
-}
-
-.footer-links h2 {
-  margin-bottom: 20px;
-  color: var(--primary-color);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-
-.footer-container {
-  display: flex;
-}
-
-.footer-linkslist {
-  display: flex;
-  gap: 10px;
-}
-
-.footer-linksitem a {
-  display: block;
-
-  padding: 12px 12px 12px 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.footer-linksitem a .icon-instagram,
-.footer-linksitem a .icon-twitter,
-.footer-linksitem a .icon-facebook,
-.footer-linksitem a .icon-linkedin {
-  fill: var(--primary-color);
-}
-
-.footer-linksitem a:hover,
-.footer-linksitem a:focus {
-  background-color: var(--link-color);
-}
-
-.email-form {
-  margin-left: 93px;
-  width: 570px;
-}
-
-.email-form-container {
-  display: flex;
-}
-
-.email-form-title {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.email-form-input {
-  width: 358px;
-  height: 50px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 12px;
-  padding-left: 16px;
-  color: #fff;
-}
-
-.email-form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.48px;
-}
-
-.email-form-button {
-  width: 200px;
-  height: 50px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  text-align: left;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  padding: 10px 28px 10px 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.email-form-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  fill: #fff;
 }
