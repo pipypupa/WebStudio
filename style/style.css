@@ -52,7 +52,7 @@
   50% {
     opacity: 0.5;
     transform: translateX(-350px);
-    color: purple;
+    color: rgb(159, 112, 120);
   }
   75% {
     opacity: 0.75;
