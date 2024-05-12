@@ -77,6 +77,9 @@
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 1%;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill, border-color;
 }
 .modal-button {
   display: block;
@@ -90,6 +93,9 @@
   color: var(--primary-color);
   background-color: var(--link-color);
   cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill, border-color;
 }
 
 .modal-close-icon {
@@ -98,18 +104,22 @@
   height: 25px;
 }
 .modal-close {
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border-radius: 100%;
-  border: solid 1px var(--text-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    stroke: rgba(0, 0, 0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
 }
 
 .modal-close-icon:hover {
