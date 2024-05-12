@@ -47,7 +47,7 @@
   25% {
     opacity: 0.4;
     transform: translateX(-500px);
-    color: red;
+    color: rgb(194, 141, 150);
   }
   50% {
     opacity: 0.5;
