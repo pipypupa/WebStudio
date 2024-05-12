@@ -9,6 +9,9 @@
   top: 0;
   bottom: 0;
   backdrop-filter: (3px);
+  transition-property: visibility, opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   width: 528px;
@@ -59,6 +62,9 @@
   height: 40px;
   width: 448px;
   padding-left: 41px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill, border-color;
 }
 .modal-input1 {
   box-sizing: border-box;
@@ -105,21 +111,20 @@
 }
 .modal-close {
   position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border: solid 1px;
-    border-radius: 50%;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    stroke: rgba(0, 0, 0, 0.1);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  stroke: rgba(0, 0, 0, 0.1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .modal-close-icon:hover {
@@ -141,6 +146,9 @@
   position: absolute;
   top: 30px;
   left: 15px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill, border-color;
 }
 
 .modal-item:hover .modal-icon,
