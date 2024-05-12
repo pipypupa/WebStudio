@@ -22,6 +22,9 @@
   box-shadow: 0px 2px 1px 0px;
   padding-top: 40px;
   padding-bottom: 40px;
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-item {
   position: relative;
@@ -137,6 +140,9 @@
   visibility: hidden;
   pointer-events: none;
 }
+.backdrop.is-hidden .modal {
+  transform: translate(0, 0) scale(0, 0);
+}
 .no-scroll {
   overflow: hidden;
 }
@@ -157,3 +163,4 @@
   fill: var(--link-color);
   border-color: var(--link-color);
 }
+
