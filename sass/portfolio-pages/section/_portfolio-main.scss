@@ -1,0 +1,137 @@
+.main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .main-overlay {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transform: scaleY(0);
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 63px;
+    left: 23px;
+    opacity: 0;
+  }
+  .main-item:focus .main-overlay,
+  .main-item:hover .main-overlay {
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    cursor: pointer;
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  .main-item:focus .overlay-text,
+  .main-item:hover .overlay-text {
+    color:  $primary-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    position: absolute;
+    opacity: 1;
+  }
+  
+  .main-list {
+    padding-top: 94px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .portfolio-button {
+    color: $title-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: #f5f4fa;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+  }
+  
+  .portfolio-button:nth-child(2) {
+    width: 112px;
+  }
+  .portfolio-button:nth-child(3) {
+    width: 103px;
+  }
+  .portfolio-button:nth-child(4) {
+    width: 130px;
+  }
+  .portfolio-button:hover {
+    background-color: $link-color;
+    color:  $primary-color;
+    border: none;
+  }
+  .main-images {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .main-item {
+    position: relative;
+    color: $title-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    flex-basis: calc((100% / 3) - 30px);
+    margin-right: auto;
+    border: 1px solid #eeeeee;
+  }
+  .main-item:hover {
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+    border: 1px #eeeeee solid;
+  }
+  .main-img {
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  .main-title {
+    color: $title-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  
+  .main-text {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 20px;
+  }

@@ -1,0 +1,167 @@
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(128, 128, 128, 0.4);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: (3px);
+    transition-property: visibility, opacity;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal {
+    width: 528px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    color: $text-color;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition-property: transform;
+    transition-duration: 2000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-item {
+    position: relative;
+  }
+  .modal-text {
+    color:  $word-color;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 3%;
+    text-align: center;
+  }
+  .modal-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .modal-labal {
+    display: block;
+    color: $text-color;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1%;
+    text-align: left;
+    margin-bottom: 4px;
+    width: 448px;
+  }
+  .modal-input {
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    width: 448px;
+    padding-left: 41px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill, border-color;
+  }
+  .modal-input1 {
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 96px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 65px;
+    text-align: left;
+    color: $text-color;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1%;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill, border-color;
+  }
+  .modal-button {
+    display: block;
+    padding: 10px 52px 10px 52px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    margin-top: 30px;
+    color:  $primary-color;
+    background-color:  $link-color;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill, border-color;
+  }
+  
+  .modal-close-icon {
+    fill: $title-color;
+    width: 25px;
+    height: 25px;
+  }
+  .modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    stroke: rgba(0, 0, 0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+  
+  .modal-close-icon:hover {
+    fill: $link-color;
+    border-color: $link-color;
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(0, 0) scale(0, 0);
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  .modal-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill, border-color;
+  }
+  
+  .modal-item:hover .modal-icon,
+  .modal-item:hover .modal-input,
+  .modal-item:hover .modal-input1 {
+    fill: $link-color;
+    border-color: $link-color;
+  }
+  
+  

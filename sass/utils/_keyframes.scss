@@ -1,0 +1,25 @@
+@keyframes title-studio {
+    0% {
+      opacity: 0;
+      transform: translateX(-800px);
+    }
+    25% {
+      opacity: 0.4;
+      transform: translateX(-500px);
+      color: rgb(194, 141, 150);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(-350px);
+      color: rgb(159, 112, 120);
+    }
+    75% {
+      opacity: 0.75;
+      transform: translateX(-150px);
+      color: pink;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
