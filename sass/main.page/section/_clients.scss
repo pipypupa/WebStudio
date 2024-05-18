@@ -51,10 +51,10 @@
   .clients-item a:focus .icon-foster-peters,
   .clients-item a:focus .icon-brand,
   .clients-item a:focus .icon-company-3 {
-    fill: var(--link-color);
+    fill: $link-color;
   }
   
   .clients-item a:hover,
   .clients-item a:focus {
-    border: 1px solid var(--link-color);
+    border: 1px solid $link-color;
   }
