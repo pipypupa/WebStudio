@@ -1,9 +1,8 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .clients-container h2 {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__container h2 {
     margin-bottom: 50px;
     color: $title-color;
     text-align: center;
@@ -11,26 +10,21 @@
     font-weight: 700;
     letter-spacing: 1.08px;
   }
-  
-  .clients-list {
+
+  &__list {
     display: flex;
     gap: 30px;
   }
-  
-  .clients-item a {
+
+  &__item a {
     border-radius: 4px;
     border: 1px solid $text-color;
     padding: 16px 32px 16px 32px;
     cursor: pointer;
     display: block;
   }
-  
-  .icon-Ya-Co,
-  .icon-company,
-  .icon-company-2,
-  .icon-foster-peters,
-  .icon-brand,
-  .icon-company-3 {
+
+  &__icon {
     width: 106px;
     height: 60px;
     fill: $text-color;
@@ -38,23 +32,24 @@
     transition-property: fill;
     transition-duration: 250ms;
   }
-  
-  .clients-item a:hover .icon-Ya-Co,
-  .clients-item a:hover .icon-company,
-  .clients-item a:hover .icon-company-2,
-  .clients-item a:hover .icon-foster-peters,
-  .clients-item a:hover .icon-brand,
-  .clients-item a:hover .icon-company-3,
-  .clients-item a:focus .icon-Ya-Co,
-  .clients-item a:focus .icon-company,
-  .clients-item a:focus .icon-company-2,
-  .clients-item a:focus .icon-foster-peters,
-  .clients-item a:focus .icon-brand,
-  .clients-item a:focus .icon-company-3 {
+
+  &__item a:hover &__icon,
+  &__item a:hover &__icon,
+  &__item a:hover &__icon,
+  &__item a:hover &__icon,
+  &__item a:hover &__icon,
+  &__item a:hover &__icon,
+  &__item a:focus &__icon,
+  &__item a:focus &__icon,
+  &__item a:focus &__icon,
+  &__item a:focus &__icon,
+  &__item a:focus &__icon,
+  &__item a:focus &__icon {
     fill: $link-color;
   }
-  
-  .clients-item a:hover,
-  .clients-item a:focus {
+
+  &__item a:hover,
+  &__item a:focus {
     border: 1px solid $link-color;
   }
+}

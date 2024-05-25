@@ -1,34 +1,9 @@
-.team-list {
-    display: flex;
-    gap: 30px;
-  }
-  .team-item {
-    width: 100%;
-    height: 100%;
-    background: white;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-  }
-  
-  .team-img {
-    margin-bottom: 30px;
-    margin-right: auto;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  .team-section-color {
-    background-color: #ffffff;
-  }
-  
-  .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #f5f4fa;
-  }
-  
-  .team-title {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+
+  &__title {
     color: $title-color;
     font-size: 36px;
     font-weight: 700;
@@ -36,8 +11,34 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  
-  .team-name {
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  &__color {
+    background-color: #ffffff;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__name {
     color: $title-color;
     font-size: 16px;
     font-weight: 500;
@@ -45,8 +46,8 @@
     margin-bottom: 10px;
     text-align: center;
   }
-  
-  .team-description {
+
+  &__description {
     color: $text-color;
     font-size: 16px;
     font-weight: 400;
@@ -54,15 +55,16 @@
     text-align: center;
     padding-bottom: 30px;
   }
-  .teamsocial-list {
+
+  &__list {
     display: flex;
     padding-left: 32px;
     padding-right: 32px;
     margin-bottom: 16px;
     gap: 10px;
   }
-  
-  .teamsocial-item a {
+
+  &__items a {
     padding: 12px 12px 12px 12px;
     cursor: pointer;
     display: block;
@@ -71,11 +73,27 @@
     transition-duration: 250ms;
     border-radius: 50%;
   }
-  
-  .icon-instagram,
-  .icon-twitter,
-  .icon-facebook,
-  .icon-linkedin {
+
+  &__items a:hover &__instagram,
+  &__items a:hover &__twitter,
+  &__items a:hover &__facebook,
+  &__items a:hover &__linkedin,
+  &__items a:focus &__instagram,
+  &__items a:focus &__twitter,
+  &__items a:focus &__facebook,
+  &__items a:focus &__linkedin {
+    fill: $primary-color;
+  }
+  &__items a:hover,
+  &__items a:focus {
+    background-color: $link-color;
+    border-radius: 50%;
+  }
+
+  &__instagram,
+  &__twitter,
+  &__facebook,
+  &__linkedin {
     width: 20px;
     height: 20px;
     fill: $text-color;
@@ -83,20 +101,4 @@
     transition-property: fill;
     transition-duration: 250ms;
   }
-  
-  .teamsocial-item a:hover,
-  .teamsocial-item a:focus {
-    background-color: $link-color;
-    border-radius: 50%;
-  }
-  
-  .teamsocial-item a:hover .icon-instagram,
-  .teamsocial-item a:hover .icon-twitter,
-  .teamsocial-item a:hover .icon-facebook,
-  .teamsocial-item a:hover .icon-linkedin,
-  .teamsocial-item a:focus .icon-instagram,
-  .teamsocial-item a:focus .icon-twitter,
-  .teamsocial-item a:focus .icon-facebook,
-  .teamsocial-item a:focus .icon-linkedin {
-    fill:  $primary-color;
-  }
+}
