@@ -1,3 +1,15 @@
+.main__button, .main__title, .main, .container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team__title, .specialization__title, .information__title, .main__button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.06em;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -61,8 +73,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -487,17 +497,23 @@ template {
 
 .main {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 1600px;
   height: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/overlay.webp);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgb(255, 255, 255);
   padding-top: 200px;
   padding-bottom: 200px;
   border-radius: 4px;
+}
+.main__container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
 }
 .main__title {
   color: #ffffff;
@@ -508,8 +524,6 @@ template {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
-  margin-left: auto;
-  margin-right: auto;
   animation-name: title-studio;
   animation-duration: 5000ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -529,12 +543,8 @@ template {
   flex-shrink: 0;
   text-align: center;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
   font-size: 16px;
-  font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0.06em;
   margin-top: 30px;
   cursor: pointer;
 }
@@ -545,11 +555,15 @@ template {
 }
 .information__container {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 100px;
 }
 .information__list {
   display: flex;
-  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
 }
 .information__item:nth-child(1)::before {
   background-image: url(../img/antenna.png);
@@ -576,9 +590,6 @@ template {
 }
 .information__title {
   color: #212121;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   gap: 50px;
   margin-bottom: 10px;
@@ -597,18 +608,24 @@ template {
 }
 .specialization__container {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
 }
 .specialization__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 .specialization__list {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
 }
 .specialization__item {
@@ -629,6 +646,7 @@ template {
   width: 370px;
   padding-top: 27px;
   padding-bottom: 27px;
+  background-size: cover;
 }
 
 .team {
@@ -636,16 +654,23 @@ template {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
+.team__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-direction: column;
+}
 .team__title {
   color: #212121;
   font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.03;
   text-align: center;
   margin-bottom: 50px;
 }
 .team__list {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
 }
 .team__item {
@@ -683,10 +708,12 @@ template {
   padding-bottom: 30px;
 }
 .team__list {
-  display: flex;
   padding-left: 32px;
   padding-right: 32px;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 10px;
 }
 .team__items a {
@@ -728,6 +755,8 @@ template {
 }
 .clients__list {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
 }
 .clients__item a {

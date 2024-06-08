@@ -3,22 +3,21 @@
   background-color: #ffffff;
 
   &__container {
-    display: flex;
-    gap: 100px;
+    @include flexbox($gap: 100px);
+    @include flexbox($center-y: center);
   }
 
   &__title {
     color: $title-color;
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
+
+    @extend %title-styles;
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($gap: 30px);
   }
 
   &__item {
@@ -41,5 +40,6 @@
     width: 370px;
     padding-top: 27px;
     padding-bottom: 27px;
+    background-size: cover;
   }
 }

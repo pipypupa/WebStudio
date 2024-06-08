@@ -3,18 +3,22 @@
   padding-bottom: 94px;
   background-color: #f5f4fa;
 
+  &__container {
+    @include flexbox($center-y: center, $position-x: center);
+    flex-direction: column;
+  }
+
   &__title {
     color: $title-color;
     font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.03;
     text-align: center;
     margin-bottom: 50px;
+
+    @extend %title-styles;
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($gap: 30px);
   }
 
   &__item {
@@ -57,11 +61,11 @@
   }
 
   &__list {
-    display: flex;
     padding-left: 32px;
     padding-right: 32px;
     margin-bottom: 16px;
-    gap: 10px;
+
+    @include flexbox($gap: 10px);
   }
 
   &__items a {

@@ -3,13 +3,11 @@
   padding-bottom: 94px;
 
   &__container {
-    display: flex;
-    gap: 100px;
+    @include flexbox($gap: 100px);
   }
 
   &__list {
-    display: flex;
-    gap: 50px;
+    @include flexbox($gap: 30px);
   }
 
   &__item:nth-child(1)::before {
@@ -39,12 +37,11 @@
 
   &__title {
     color: $title-color;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     gap: 50px;
     margin-bottom: 10px;
+
+    @extend %title-styles;
   }
 
   &__text {
