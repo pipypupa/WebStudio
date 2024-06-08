@@ -28,8 +28,7 @@
     word-wrap: break-word;
   }
   &__list {
-    display: flex;
-    gap: 50px;
+    @include flexbox($gap: 50px);
     align-items: center;
   }
 
@@ -65,8 +64,7 @@
   }
   &__contacts {
     margin-left: auto;
-    display: flex;
-    gap: 50px;
+    @include flexbox($gap: 50px);
     align-items: center;
   }
   &__mail {

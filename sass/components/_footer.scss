@@ -76,8 +76,7 @@
   }
 
   &__linkslist {
-    display: flex;
-    gap: 10px;
+    @include flexbox($gap: 10px);
   }
 
   &__linksitem a {

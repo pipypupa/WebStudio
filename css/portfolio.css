@@ -413,6 +413,8 @@ template {
 }
 .header__list {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 50px;
   align-items: center;
 }
@@ -448,6 +450,8 @@ template {
 .header__contacts {
   margin-left: auto;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 50px;
   align-items: center;
 }
@@ -688,6 +692,8 @@ template {
 }
 .footer__linkslist {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 10px;
 }
 .footer__linksitem a {
