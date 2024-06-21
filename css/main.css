@@ -1,4 +1,4 @@
-.main__button, .main__title, .container {
+.footer__button, .main__button, .main__title, .container {
   margin-right: auto;
   margin-left: auto;
 }
@@ -1071,6 +1071,7 @@ template {
 
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
 }
 .footer__container {
   text-align: center;
@@ -1095,8 +1096,7 @@ template {
 }
 .footer__flex {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__flex {
@@ -1106,6 +1106,7 @@ template {
 @media screen and (min-width: 1200px) {
   .footer__flex {
     text-align: left;
+    padding-bottom: 60px;
   }
 }
 .footer__web {
@@ -1166,19 +1167,13 @@ template {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer__links {
-  margin-top: 60px;
-}
 @media screen and (min-width: 768px) {
   .footer__links {
-    padding-top: 5px;
-    margin-top: 0;
     margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__links {
-    margin-top: 0;
     padding-top: 12px;
     margin-left: 70px;
   }
@@ -1197,6 +1192,7 @@ template {
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  margin-bottom: 60px;
 }
 .footer__linksitem a {
   display: block;
@@ -1321,7 +1317,6 @@ template {
   justify-content: center;
   align-items: center;
   gap: 0px;
-  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .footer__button {
