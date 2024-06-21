@@ -1,18 +1,38 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__container h2 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 
   &__list {
     @include flexbox($gap: 30px);
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item a {
@@ -21,6 +41,21 @@
     padding: 16px 32px 16px 32px;
     cursor: pointer;
     display: block;
+
+    flex-shrink: 1;
+
+    padding: 16px 52px 16px 52px;
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      
+      padding: 16px 60px 16px 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      
+      padding: 16px 32px 16px 32px;
+    }
   }
 
   &__icon {

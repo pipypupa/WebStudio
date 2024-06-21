@@ -1,7 +1,12 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__container {
     @include flexbox($center-y: center, $position-x: center);
@@ -10,24 +15,47 @@
 
   &__title {
     color: $title-color;
-    font-size: 36px;
     text-align: center;
-    margin-bottom: 50px;
-
     @extend %title-styles;
+    font-size: 28px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
 
   &__list {
     @include flexbox($gap: 30px);
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 50px;
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
     width: 100%;
-    height: 100%;
     background: white;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    padding-bottom: 24px;
+    max-width: 450px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+      width: 270px;
+    }
   }
 
   &__color {
@@ -35,11 +63,25 @@
   }
 
   &__img {
-    margin-bottom: 30px;
-    margin-right: auto;
+    max-width: 450px;
     width: 100%;
     height: 100%;
-    display: block;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 460px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
   }
 
   &__name {
@@ -61,11 +103,16 @@
   }
 
   &__list {
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 16px;
-
+    margin-top: 16px;
     @include flexbox($gap: 10px);
+
+    @media screen and (min-width: 768px) {
+    }
+    @include flexbox($gap: 30px);
+    @media screen and (min-width: 1200px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 
   &__items a {
@@ -76,6 +123,9 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     border-radius: 50%;
+
+    @media screen and (min-width: 480px) {
+    }
   }
 
   &__items a:hover &__instagram,
@@ -98,11 +148,16 @@
   &__twitter,
   &__facebook,
   &__linkedin {
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     fill: $text-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
     transition-duration: 250ms;
+
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

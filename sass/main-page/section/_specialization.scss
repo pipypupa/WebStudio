@@ -1,45 +1,47 @@
 .specialization {
-  padding-bottom: 94px;
+  display: none;
   background-color: #ffffff;
 
-  &__container {
-    @include flexbox($gap: 100px);
-    @include flexbox($center-y: center);
-  }
+  @media screen and (min-width: 1200px) {
+    display: inline;
 
-  &__title {
-    color: $title-color;
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 50px;
+    &__container {
+      @include flexbox($gap: 100px);
+      @include flexbox($center-y: center);
+    }
 
-    @extend %title-styles;
-  }
+    &__title {
+      color: $title-color;
+      text-align: center;
+      font-size: 36px;
+    }
 
-  &__list {
-    @include flexbox($gap: 30px);
-  }
+    &__list {
+      @include flexbox($gap: 30px);
+      margin-top: 50px;
+    }
 
-  &__item {
-    position: relative;
-  }
+    &__item {
+      position: relative;
+    }
 
-  &__item p {
-    color: $primary-color;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-  }
+    &__div {
+      background: rgba(47, 48, 58, 0.5);
+      position: absolute;
+      bottom: 0px;
+      width: 370px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      background-size: cover;
+    }
 
-  &__div {
-    background: rgba(47, 48, 58, 0.5);
-    position: absolute;
-    bottom: 0px;
-    width: 370px;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    background-size: cover;
+    &__item p {
+      color: $primary-color;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+    }
   }
 }

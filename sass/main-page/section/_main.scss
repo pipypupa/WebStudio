@@ -1,63 +1,79 @@
 .main {
-    display: block;
-    width: 1600px;
-    height: 100%;
-    background-image: linear-gradient(#2f303a66, #2f303a66),
-      url(../img/overlay.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 1);
+  display: block;
+  background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../img/overlay.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 128px;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    border-radius: 4px;
-    
+  }
+
+  &__container {
+    flex-direction: column;
+
+    @include flexbox($center-y: center);
+  }
+
+  &__title {
+    color: $primary-color;
+    text-align: center;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     @extend %center-base;
+    word-wrap: break-word;
+    font-size: 26px;
+    max-width: 360px;
+    line-height: 1.61em;
+    letter-spacing: 1.56px;
+    animation-name: title-studio;
+    animation-duration: 5000ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
 
-    &__container {
-      flex-direction: column;
-
-      @include flexbox($center-y: center);
-    }
-
-    &__title {
-      color: $primary-color;
-      text-align: center;
+    @media screen and (min-width: 1200px) {
       font-size: 44px;
-      font-weight: 900;
-      line-height: 60px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      max-width: 696px;
       width: 696px;
-      animation-name: title-studio;
-      animation-duration: 5000ms;
-      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      animation-iteration-count: 1;
-      animation-direction: normal;
-
-      @extend %center-base;
-    }
-
-    &__button {
-      color: $primary-color;
-      background-color: #0066cc;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      width: 216px;
-      height: 50px;
-      flex-shrink: 0;
-      text-align: center;
-      display: block;
-      font-size: 16px;
-      line-height: 30px;
-      margin-top: 30px;
-      cursor: pointer;
-
-      @extend %title-styles;
-      @extend %center-base;
+      line-height: 1.3em;
+      letter-spacing: 0.02;
     }
   }
+
+  &__button {
+    color: $primary-color;
+    background-color: #0066cc;
+    border: none;
+    @extend %center-base;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    height: 50px;
+
   
+    
+    padding: 10px 24px 10px 24px;
+
+    @media screen and (min-width: 768px) {
+      padding: 10px 24px 10px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 36px 10px 36px;
+    }
+  }
+}

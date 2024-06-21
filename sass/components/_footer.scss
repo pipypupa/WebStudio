@@ -4,69 +4,110 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      @include flexbox();
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include flexbox();
+      flex-wrap: nowrap;
+    }
   }
 
-  &__flex &__title {
-    color: $word-color;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
+  &__flex {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__web {
     color: $link-color;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    margin-bottom: 15px;
+    font-family: "Raleway";
+    @extend %title-styles;
+    margin-bottom: 20px;
+    font-size: 24px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
 
   &__studio {
     color: $primary-color;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    margin-bottom: 15px;
+    font-family: "Raleway";
+    @extend %title-styles;
+    margin-bottom: 20px;
+    font-size: 24px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
 
   &__list &__item {
-    margin-top: 9px;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      @include flexbox($gap: 9px);
+    }
   }
 
   &__address {
     color: $primary-color;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03;
-  }
-
-  &__mail {
-    text-decoration: none;
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-style: normal;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
+  &__mail,
   &__phone {
     text-decoration: none;
     color: $text-color;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
   }
 
   &__links {
-    padding-top: 12px;
-    margin-left: 70px;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 5px;
+      margin-top: 0;
+      margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      padding-top: 12px;
+      margin-left: 70px;
+    }
   }
 
   &__links h2 {
+    margin-top: 60px;
     margin-bottom: 20px;
     color: $primary-color;
     font-size: 14px;
@@ -86,9 +127,8 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__instagram,
@@ -113,37 +153,66 @@
   }
 
   &__form {
-    margin-left: 93px;
-    width: 570px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      padding-top: 10px;
+    }
   }
 
   &__box1 {
-    display: flex;
+    display: inline;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__title2 {
     color: #fff;
-    font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-top: 60px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__input {
-    width: 358px;
-    height: 50px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-right: 12px;
+
     padding-left: 16px;
     color: #fff;
+    max-width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 50px;
+      flex-shrink: 1;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+      padding-left: 16px;
+    }
 
     &__input::placeholder {
       color: rgba(255, 255, 255, 0.6);
@@ -172,9 +241,12 @@
     line-height: 30px;
     letter-spacing: 0.96px;
     padding: 10px 28px 10px 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($center-y: center);
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
   }
 
   &__icon {
