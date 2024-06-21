@@ -538,6 +538,7 @@ template {
   display: flex;
 }
 .header__mail, .header__phone {
+  font-family: Roboto;
   color: #757575;
   font-weight: 500;
   line-height: normal;
@@ -668,7 +669,6 @@ template {
   border: none;
 }
 .main__list {
-  padding-top: 94px;
   display: flex;
   gap: 8px;
   justify-content: center;
