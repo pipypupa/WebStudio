@@ -26,7 +26,7 @@
     }
   }
 
-  &__list {
+  &__list1 {
     @include flexbox($gap: 30px);
     flex-wrap: wrap;
     margin-top: 30px;
@@ -34,6 +34,17 @@
     @media screen and (min-width: 1200px) {
       margin-top: 50px;
       flex-wrap: nowrap;
+    }
+  }
+
+  &__list {
+    margin-top: 16px;
+
+    @media screen and (min-width: 768px) {
+    }
+    @include flexbox($gap: 10px);
+
+    @media screen and (min-width: 1200px) {
     }
   }
 
@@ -68,7 +79,7 @@
   &__img {
     max-width: 450px;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin-bottom: 30px;
 
     @media screen and (min-width: 480px) {
@@ -104,17 +115,6 @@
     letter-spacing: 0.03;
     text-align: center;
     font-family: Roboto;
-  }
-
-  &__list {
-    margin-top: 16px;
-
-    @media screen and (min-width: 768px) {
-    }
-    @include flexbox($gap: 10px);
-    
-    @media screen and (min-width: 1200px) {
-    }
   }
 
   &__items a {

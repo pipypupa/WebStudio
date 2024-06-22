@@ -85,13 +85,14 @@
     letter-spacing: 0.03em;
     border: 1px solid #eeeeee;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px ) {
       flex-basis: calc((100% / 3) - 30px);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px ) {
       flex-basis: calc((100% / 3) - 30px);
     }
+
   }
   &__list2:focus &__overlay,
   &__list2:hover &__overlay {
@@ -140,21 +141,21 @@
     margin-right: auto;
     display: block;
     max-width: 450px;
-    width: auto;
+    width: 100;
 
     @media screen and (min-width: 480px) {
       width: 450px;
-      height: 294px;
+      height: auto;
     }
 
     @media screen and (min-width: 768px) {
       width: 354px;
-      height: 294px;
+      height: auto;
     }
 
     @media screen and (min-width: 1200px) {
       width: 370px;
-      height: 294px;
+      height: auto;
     }
   }
   &__title {
@@ -162,7 +163,7 @@
     font-size: 18px;
     line-height: 36px;
     margin-left: 24px;
-    margin-right: 24px;
+   
     font-family: Roboto;
 
     @extend %title-styles;
@@ -174,8 +175,7 @@
     line-height: 30px;
     letter-spacing: 0.03em;
     margin-left: 24px;
-    margin-right: 24px;
-    padding-bottom: 20px;
     font-family: Roboto;
+    padding-bottom: 20px;
   }
 }

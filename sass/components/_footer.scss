@@ -1,6 +1,9 @@
 .footer {
   background-color: $background-color;
-  padding-bottom: 60px;
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 
   &__container {
     text-align: center;
