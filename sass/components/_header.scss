@@ -25,6 +25,7 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-decoration: none;
+    font-family: Raleway;
   }
 
   &__studio {
@@ -175,5 +176,9 @@
       width: 10px;
       height: 16px;
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 }
