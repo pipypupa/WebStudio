@@ -904,13 +904,19 @@ template {
   }
 }
 .footer__links h2 {
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 20px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .footer__links h2 {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 .footer__linkslist {
   display: flex;
@@ -974,6 +980,8 @@ template {
 @media screen and (min-width: 1200px) {
   .footer__title2 {
     margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
   }
 }
 .footer__input {

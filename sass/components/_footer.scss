@@ -105,13 +105,18 @@
   }
 
   &__links h2 {
-    margin-top: 60px;
+    padding-top: 60px;
     margin-bottom: 20px;
     color: $primary-color;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-start;
+    }
   }
 
   &__linkslist {
@@ -183,6 +188,8 @@
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
     }
   }
 
