@@ -13,6 +13,7 @@
   }
 
   &__btn {
+    font-family: Roboto;
     color: $title-color;
     text-align: center;
     font-size: 16px;
@@ -84,14 +85,13 @@
     letter-spacing: 0.03em;
     border: 1px solid #eeeeee;
 
-    @media screen and (min-width: 768px ) {
+    @media screen and (min-width: 768px) {
       flex-basis: calc((100% / 3) - 30px);
     }
 
-    @media screen and (min-width: 1200px ) {
+    @media screen and (min-width: 1200px) {
       flex-basis: calc((100% / 3) - 30px);
     }
-
   }
   &__list2:focus &__overlay,
   &__list2:hover &__overlay {
@@ -163,7 +163,7 @@
     line-height: 36px;
     margin-left: 24px;
     margin-right: 24px;
-    padding-left: 24px;
+    font-family: Roboto;
 
     @extend %title-styles;
   }
@@ -176,6 +176,6 @@
     margin-left: 24px;
     margin-right: 24px;
     padding-bottom: 20px;
-    padding-left: 24px;
+    font-family: Roboto;
   }
 }

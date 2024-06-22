@@ -18,6 +18,8 @@
     text-align: center;
     @extend %title-styles;
     font-size: 28px;
+    margin-bottom: 50px;
+    font-family: roboto;
 
     @media screen and (min-width: 1200px) {
       font-size: 36px;
@@ -49,6 +51,7 @@
     }
 
     @media screen and (min-width: 768px) {
+      padding-bottom: 24px;
       width: 354px;
     }
 
@@ -91,6 +94,7 @@
     letter-spacing: 0.03;
     margin-bottom: 10px;
     text-align: center;
+    font-family: Roboto;
   }
 
   &__description {
@@ -99,19 +103,17 @@
     font-weight: 400;
     letter-spacing: 0.03;
     text-align: center;
-    padding-bottom: 30px;
+    font-family: Roboto;
   }
 
   &__list {
     margin-top: 16px;
-    @include flexbox($gap: 10px);
 
     @media screen and (min-width: 768px) {
     }
-    @include flexbox($gap: 30px);
+    @include flexbox($gap: 10px);
+    
     @media screen and (min-width: 1200px) {
-      padding-left: 32px;
-      padding-right: 32px;
     }
   }
 

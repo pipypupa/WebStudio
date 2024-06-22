@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: Raleway, Roboto, sans-serif;
+  font-family: Raleway, Roboto;
 }
 
 .container {
@@ -438,7 +438,7 @@ input {
   align-items: center;
 }
 .header__web {
-  color: black;
+  color: #212121;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -485,18 +485,19 @@ input {
 .header__link {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 14px;
   word-wrap: break-word;
+  font-family: Roboto;
 }
 .header__link::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: -36px;
+  bottom: -30px;
   left: 0;
   opacity: 0;
   background-color: #2196f3;
@@ -532,7 +533,7 @@ input {
 .header__contacts__contact {
   display: flex;
 }
-.header__mail, .header__phone {
+.header__mail {
   font-family: Roboto;
   color: #757575;
   font-weight: 500;
@@ -547,16 +548,18 @@ input {
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @media screen and (min-width: 768px) {
-  .header__mail, .header__phone {
+  .header__mail {
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__mail, .header__phone {
+  .header__mail {
+    margin-left: 240px;
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -564,14 +567,47 @@ input {
     gap: 10px;
   }
 }
-.header__mail:hover, .header__phone:hover {
+.header__mail:hover {
+  color: #2196f3;
+}
+.header__phone {
+  font-family: Roboto;
+  color: #757575;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-name: header-email;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__phone {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__phone {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.header__phone:hover {
   color: #2196f3;
 }
 .header__phone:hover .header__smartphone {
   fill: #2196f3;
-}
-.header:hover {
-  color: #2196f3;
 }
 .header__mail:hover .header__email {
   fill: #2196f3;
@@ -597,7 +633,6 @@ input {
   width: 10px;
   height: 16px;
   fill: #757575;
-  margin-right: 8px;
 }
 @media screen and (min-width: 768px) {
   .header__smartphone {
@@ -632,7 +667,8 @@ input {
   }
 }
 .main__btn {
-  color: black;
+  font-family: Roboto;
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -700,7 +736,7 @@ input {
 }
 .main__list2 {
   position: relative;
-  color: black;
+  color: #212121;
   font-weight: 700;
   letter-spacing: 1.08px;
   font-size: 16px;
@@ -783,12 +819,12 @@ input {
   }
 }
 .main__title {
-  color: black;
+  color: #212121;
   font-size: 18px;
   line-height: 36px;
   margin-left: 24px;
   margin-right: 24px;
-  padding-left: 24px;
+  font-family: Roboto;
 }
 .main__text {
   color: #757575;
@@ -799,7 +835,7 @@ input {
   margin-left: 24px;
   margin-right: 24px;
   padding-bottom: 20px;
-  padding-left: 24px;
+  font-family: Roboto;
 }
 
 .footer {
@@ -876,6 +912,7 @@ input {
   }
 }
 .footer__address {
+  font-family: Roboto;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -893,6 +930,7 @@ input {
   }
 }
 .footer__mail, .footer__phone {
+  font-family: Roboto;
   text-decoration: none;
   color: #757575;
   font-size: 14px;
@@ -912,6 +950,7 @@ input {
   }
 }
 .footer__links h2 {
+  font-family: Roboto;
   padding-top: 60px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -931,7 +970,6 @@ input {
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 60px;
 }
 .footer__linksitem a {
   display: block;
@@ -977,6 +1015,7 @@ input {
   }
 }
 .footer__title2 {
+  font-family: Roboto;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -993,6 +1032,12 @@ input {
   }
 }
 .footer__input {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
@@ -1002,7 +1047,6 @@ input {
   max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
-  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .footer__input {
