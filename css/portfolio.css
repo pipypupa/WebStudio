@@ -17,7 +17,6 @@ body {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
 }
 @media screen and (min-width: 320px) {
   .container {
@@ -647,6 +646,177 @@ input {
 }
 .header a {
   text-decoration: none;
+}
+.header nav {
+  width: 100%;
+  flex-grow: 3;
+  height: 100%;
+}
+.header .nav_menu {
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .header .mobile__menu {
+    display: none;
+  }
+}
+.header .burger__close {
+  background: none;
+  margin-left: auto;
+  margin-bottom: auto;
+  padding-top: 20px;
+  padding-right: 10px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header .burger__close {
+    display: none;
+  }
+}
+.header .burger__closeicon {
+  width: 25px;
+  height: 25px;
+  fill: #212121;
+}
+.header .burger__link {
+  color: #212121;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-family: Roboto;
+}
+.header .burger__link:hover {
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .header .nav_menu a {
+    display: none;
+  }
+}
+.header input[type=checkbox],
+.header label {
+  display: none;
+}
+.header .burger__roster {
+  padding-top: 48px;
+  margin-bottom: 220px;
+  row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.header .burger__container {
+  display: flex;
+}
+.header .burger__contacts {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.header .burger__sociallist {
+  display: flex;
+  gap: 20px;
+}
+.header .burger__tel {
+  color: #757575;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.header .burger__tel:hover {
+  color: #2196f3;
+}
+.header .burger__email {
+  color: #757575;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.header .burger__email:hover {
+  color: #2196f3;
+}
+.header .burger__socialnetworks {
+  color: #2196f3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+}
+.header label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.header label:hover {
+  cursor: pointer;
+}
+.header label span {
+  top: 15px;
+}
+.header label span,
+.header label span::before,
+.header label span::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #333;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+.header label span::before {
+  top: -5px;
+}
+.header label span::after {
+  top: 5px;
+}
+.header .nav_menu {
+  display: none;
+  height: 100vh;
+  pointer-events: none;
+}
+.header input[type=checkbox] {
+  position: absolute;
+  z-index: 4;
+}
+.header input[type=checkbox]:checked ~ .nav_menu {
+  display: flex;
+}
+.header input[type=checkbox]:checked ~ label span {
+  transform: rotate(-45deg);
+}
+.header input[type=checkbox]:checked ~ label span::before {
+  top: 0;
+  transform: rotate(0);
+}
+.header input[type=checkbox]:checked ~ label span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.header .nav_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 12px 8px #ececec;
+  position: fixed;
+  padding-left: 40px;
+}
+
+.wrapper {
+  padding-top: 70px;
 }
 
 .main {
