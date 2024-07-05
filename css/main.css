@@ -402,13 +402,10 @@ button {
   border: none;
 }
 
-/* button:focus {
-    outline: none;
+a {
+  text-decoration: none;
 }
 
-a:focus {
-    outline: none;
-} */
 input {
   padding: 0;
   outline: none;
@@ -1577,7 +1574,7 @@ input {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   background-color: rgb(255, 255, 255);
   position: absolute;
   color: #757575;
@@ -1588,6 +1585,16 @@ input {
   transition-property: transform;
   transition-duration: 2000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-item {
@@ -1602,9 +1609,12 @@ input {
   line-height: 23px;
   letter-spacing: 3%;
   text-align: center;
+  font-family: Roboto;
 }
 
 .modal-list {
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -1622,26 +1632,31 @@ input {
   letter-spacing: 1%;
   text-align: left;
   margin-bottom: 4px;
-  width: 448px;
 }
 
 .modal-input {
-  box-sizing: border-box;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  height: 40px;
-  width: 448px;
-  padding-left: 41px;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: fill, border-color;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 240px;
+}
+@media screen and (min-width: 480px) {
+  .modal-input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-input {
+    width: 448px;
+  }
 }
 
 .modal-input1 {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 370px;
   height: 96px;
   padding-top: 12px;
   padding-left: 16px;
@@ -1657,6 +1672,11 @@ input {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: fill, border-color;
+}
+@media screen and (min-width: 1200px) {
+  .modal-input1 {
+    width: 448px;
+  }
 }
 
 .modal-button {
@@ -1705,6 +1725,44 @@ input {
   border-color: #2196f3;
 }
 
+.modal-icon {
+  width: 18px;
+  height: 18px;
+  fill: color var(--title-color);
+  position: absolute;
+}
+@media screen and (min-width: 1200px) {
+  .modal-icon #modal-icon-human {
+    top: 60px;
+    left: 56px;
+  }
+  .modal-icon #modal-icon-phone {
+    left: 58px;
+  }
+  .modal-icon #modal-icon-email {
+    top: 246px;
+    left: 52px;
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 480px) {
+  .modal-icon #modal-icon1 {
+    top: 126px;
+    left: 56px;
+  }
+  .modal-icon #modal-icon2 {
+    top: 198px;
+    left: 54px;
+  }
+  .modal-icon #modal-icon3 {
+    top: 266px;
+    left: 50px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1735,4 +1793,8 @@ input {
 .modal-item:hover .modal-input1 {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+.wtf {
+  font-family: Roboto;
 }/*# sourceMappingURL=main.css.map */
