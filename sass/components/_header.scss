@@ -37,6 +37,24 @@
     word-wrap: break-word;
     text-decoration: none;
   }
+
+  &__button {
+    display: block;
+    opacity: 1;
+    background-color: $primary-color;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      opacity: 0;
+      position: absolute;
+    }
+
+    @media screen and (min-width: 1200px) {
+      opacity: 0;
+      position: absolute;
+    }
+  }
+
   &__list {
     display: none;
 
@@ -203,196 +221,8 @@
       height: 16px;
     }
   }
-
-  a {
-    text-decoration: none;
-  }
-
-  nav {
-    width: 100%;
-    flex-grow: 3;
-    height: 100%;
-  }
-  .nav_menu {
-    list-style: none;
-  }
-
-  .mobile__menu {
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
-
-  .burger__close {
-    background: none;
-    margin-left: auto;
-    margin-bottom: auto;
-    padding-top: 20px;
-    padding-right: 10px;
-    display: block;
-
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
-
-  .burger__closeicon {
-    width: 25px;
-    height: 25px;
-    fill: #212121;
-  }
-
-  .burger__link {
-    color: $title-color;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.8px;
-    font-family: Roboto;
-  }
-
-  .burger__link:hover {
-    color: $link-color;
-  }
-
-  .nav_menu a {
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
-  input[type="checkbox"],
-  label {
-    display: none;
-  }
-
-  .burger__roster {
-    padding-top: 48px;
-    margin-bottom: 220px;
-    row-gap: 32px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .burger__container {
-    display: flex;
-  }
-
-  .burger__contacts {
-    margin-bottom: 64px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-  }
-
-  .burger__sociallist {
-    display: flex;
-    gap: 20px;
-  }
-
-  .burger__tel {
-    color: $text-color;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.68px;
-  }
-
-  .burger__tel:hover {
-    color: $link-color;
-  }
-
-  .burger__email {
-    color: $text-color;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-  }
-
-  .burger__email:hover {
-    color: $link-color;
-  }
-
-  .burger__socialnetworks {
-    color: $link-color;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.36px;
-  }
-
-  label {
-    display: block;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  label:hover {
-    cursor: pointer;
-  }
-  label span {
-    top: 15px;
-  }
-  label span,
-  label span::before,
-  label span::after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 2.5px;
-    background: #333;
-    position: absolute;
-    right: 0;
-    transition: 0.3s;
-  }
-  label span::before {
-    top: -5px;
-  }
-  label span::after {
-    top: 5px;
-  }
-  .nav_menu {
-    display: none;
-    height: 100vh;
-    pointer-events: none;
-  }
-  input[type="checkbox"] {
-    position: absolute;
-    z-index: 4;
-  }
-  input[type="checkbox"]:checked ~ .nav_menu {
-    display: flex;
-  }
-  input[type="checkbox"]:checked ~ label span {
-    transform: rotate(-45deg);
-  }
-  input[type="checkbox"]:checked ~ label span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  input[type="checkbox"]:checked ~ label span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  .nav_menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    background: #fff;
-    box-shadow: 0 12px 8px #ececec;
-    position: fixed;
-    padding-left: 40px;
-  }
 }
 
-.wrapper {
-  padding-top: 70px;
+a {
+  text-decoration: none;
 }
