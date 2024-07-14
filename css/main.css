@@ -1426,9 +1426,9 @@ a {
 @media screen and (min-width: 786px) {
   .mobile-menu {
     flex-direction: row;
-    align-items: center;
     -moz-column-gap: 30px;
          column-gap: 30px;
+    align-items: center;
   }
 }
 .mobile-menu__close {
@@ -1436,7 +1436,7 @@ a {
   width: 30px;
   right: 8px;
   top: 8px;
-  border: 1px rgba(0, 0, 0, 0.062745098) solid;
+  border: 1px #000000 solid;
   border-radius: 20px;
   background-color: #ffffff;
   position: absolute;
@@ -1458,7 +1458,7 @@ a {
   row-gap: 32px;
 }
 .mobile-menu__list {
-  margin-bottom: 302px;
+  margin-bottom: 280px;
 }
 @media screen and (min-width: 786px) {
   .mobile-menu__list {
@@ -1497,11 +1497,6 @@ a {
   -moz-column-gap: 10px;
        column-gap: 10px;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 786px) {
-  .mobile-menu__list3 {
-    margin-top: 0px;
-  }
 }
 .mobile-menu__link__container {
   display: flex;
