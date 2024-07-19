@@ -1,7 +1,51 @@
 .main {
   display: block;
-  background-image: linear-gradient(#2f303a66, #2f303a66),
-    url(../img/overlay.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/img/mobile/mainimage@mobile1x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/img/tablet/mainimage@tablet1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/img/tablet/mainimage@tablet2x.webp);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/img/desktop/mainimage@desktop1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/img/desktop/mainimage@desktop2x.webp);
+    }
+  }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,8 +110,6 @@
     height: 50px;
     font-family: Roboto;
 
-  
-    
     padding: 10px 24px 10px 24px;
 
     @media screen and (min-width: 768px) {
