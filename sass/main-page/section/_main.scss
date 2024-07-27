@@ -8,6 +8,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../img/mobile/mainimage@mobile1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/mobile/mainimage@mobile2x.webp);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -36,7 +46,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../img/desktop/mainimage@desktop1x.webp);
-      
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
